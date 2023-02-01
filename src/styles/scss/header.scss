@@ -16,6 +16,12 @@
         margin-left: 42px;
         display: flex;
         align-items: center;
+        cursor: pointer;
+        &:hover {
+          span {
+            color: $orange;
+          }
+        }
         &:first-child {
           margin-left: 0;
         }
@@ -28,6 +34,7 @@
           margin-right: 15px;
         }
         span {
+          transition: $tran;
           font-size: 14px;
           font-weight: 500;
         }
@@ -44,6 +51,12 @@
     &-sochial {
       display: flex;
       align-items: center;
+      .phone {
+        transition: $tran;
+        &:hover {
+          color: $orange;
+        }
+      }
       .sochials {
         display: flex;
         margin-left: 40px;
@@ -64,4 +77,7 @@
       }
     }
   }
+}
+.air {
+  height: 66px;
 }

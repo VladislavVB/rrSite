@@ -10,6 +10,12 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Site</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <main>
@@ -19,37 +25,205 @@
             <div class="header__content-utils">
               <div class="menu header__content-utils__item">
                 <div class="icon">
-                  <img src="./images/icons/menu.png" alt="">
+                  <img src="./images/icons/menu.png" alt="" />
                 </div>
                 <span>Меню</span>
               </div>
               <div class="search header__content-utils__item">
                 <div class="icon">
-                  <img src="./images/icons/search.png" alt="">
+                  <img src="./images/icons/search.png" alt="" />
                 </div>
                 <span>Поиск</span>
               </div>
             </div>
-            <a href="index.html" class="header__content-logo">
-              company logo
-            </a>
+            <a href="index.html" class="header__content-logo"> company logo </a>
             <div class="header__content-sochial">
-              <a class="phone" href="tel:8 (800) 707-07-11">8 (800) 707-07-11</a>
+              <a class="phone" href="tel:8 (800) 707-07-11"
+                >8 (800) 707-07-11</a
+              >
               <div class="sochials">
                 <a href="#" target="_blank" class="sochials-item">
-                  <img src="./images/icons/ok.png" alt="">
+                  <img src="./images/icons/ok.png" alt="" />
                 </a>
                 <a href="#" target="_blank" class="sochials-item">
-                  <img src="./images/icons/vk.png" alt="">
+                  <img src="./images/icons/vk.png" alt="" />
                 </a>
                 <a href="#" target="_blank" class="sochials-item">
-                  <img src="./images/icons/tg.png" alt="">
+                  <img src="./images/icons/tg.png" alt="" />
                 </a>
               </div>
             </div>
           </nav>
         </div>
       </header>
+      <div class="air"></div>
+
+      <!-- картинки в макте уже затемененные были, поэтому не делал тень -->
+      <section class="section bussines">
+        <div class="container">
+          <div class="bussines__descp">
+            <h1 class="bussines__descp-title">Поддержка малого бизнеса</h1>
+            <p class="bussines__descp-descp">
+              Комплексная поддержка предпринимателей Краснодарского края
+            </p>
+            <button class="bussines__descp-btn btn btn-orange">
+              Оставить заявку
+            </button>
+            <div class="bussines__slides-control">
+              <div class="bussines__slides-control-pagination">
+                <span class="pag-num pag-num-first swiper-bussines-pagination">01</span>
+                <div
+                  class="bussines__slides-control-pagination-bar swiper-scrollbar swiper-bussines-scrollbar"
+                ></div>
+                <span class="pag-num pag-num-last">07</span>
+              </div>
+              <div class="bussines__slides-control-buttons">
+                <div class="prev bussines__slides-control-buttons-item swiper-bussines-button-prev">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.2222 10L27.2222 20L17.2222 30"
+                      stroke="#232329"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="next bussines__slides-control-buttons-item swiper-bussines-button-next">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.2222 10L27.2222 20L17.2222 30"
+                      stroke="#232329"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bussines__slides-wrapper">
+            <div class="bussines__slides swiper swiper-bussines">
+              <div class="swiper-wrapper">
+                <a href="#" class="bussines__slide-card swiper-slide">
+                  <div class="bussines__slide-card-image">
+                    <img src="./images/jpg/slide1.jpg" alt="" />
+                  </div>
+                  <div class="bussines__slide-card-content">
+                    <h5 class="bussines__slide-card-title">
+                      Школа молодого предпринимателя — Бизнес молодых
+                    </h5>
+                    <div class="bussines__slide-link">
+                      <span>Подробнее</span
+                      ><img src="./images/icons/link.svg" alt="" />
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="bussines__slide-card swiper-slide">
+                  <div class="bussines__slide-card-image">
+                    <img src="./images/jpg/slide2.jpg" alt="" />
+                  </div>
+                  <div class="bussines__slide-card-content">
+                    <h5 class="bussines__slide-card-title">
+                     Верстать капец как весело!)
+                    </h5>
+                    <div class="bussines__slide-link">
+                      <span>Подробнее</span
+                      ><img src="./images/icons/link.svg" alt="" />
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="bussines__slide-card swiper-slide">
+                  <div class="bussines__slide-card-image">
+                    <img src="./images/jpg/slide1.jpg" alt="" />
+                  </div>
+                  <div class="bussines__slide-card-content">
+                    <h5 class="bussines__slide-card-title">
+                      А верстать слайдеры с ломающейся сеткой еще веселее))
+                    </h5>
+                    <div class="bussines__slide-link">
+                      <span>Подробнее</span
+                      ><img src="./images/icons/link.svg" alt="" />
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="bussines__slide-card swiper-slide">
+                  <div class="bussines__slide-card-image">
+                    <img src="./images/jpg/slide1.jpg" alt="" />
+                  </div>
+                  <div class="bussines__slide-card-content">
+                    <h5 class="bussines__slide-card-title">
+                      А без фреймворка вообщше песня
+                    </h5>
+                    <div class="bussines__slide-link">
+                      <span>Подробнее</span
+                      ><img src="./images/icons/link.svg" alt="" />
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="bussines__slide-card swiper-slide">
+                  <div class="bussines__slide-card-image">
+                    <img src="./images/jpg/slide1.jpg" alt="" />
+                  </div>
+                  <div class="bussines__slide-card-content">
+                    <h5 class="bussines__slide-card-title">
+                      А если еще это потом на битрикс vue будем натягивать))))
+                    </h5>
+                    <div class="bussines__slide-link">
+                      <span>Подробнее</span
+                      ><img src="./images/icons/link.svg" alt="" />
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="bussines__slide-card swiper-slide">
+                  <div class="bussines__slide-card-image">
+                    <img src="./images/jpg/slide1.jpg" alt="" />
+                  </div>
+                  <div class="bussines__slide-card-content">
+                    <h5 class="bussines__slide-card-title">
+                      Юзаем битрикс это потому что админская панель имеется, а совю делать долго, дорого
+                    </h5>
+                    <div class="bussines__slide-link">
+                      <span>Подробнее</span
+                      ><img src="./images/icons/link.svg" alt="" />
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="bussines__slide-card swiper-slide">
+                  <div class="bussines__slide-card-image">
+                    <img src="./images/jpg/slide1.jpg" alt="" />
+                  </div>
+                  <div class="bussines__slide-card-content">
+                    <h5 class="bussines__slide-card-title">
+                     Ну и седьмой слайд, креатив закончился, на часах уже 23:00
+                    </h5>
+                    <div class="bussines__slide-link">
+                      <span>Подробнее</span
+                      ><img src="./images/icons/link.svg" alt="" />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="./scripts/libs/swiper.js"></script>
+    <script src="./scripts/sliders.js"></script>
   </body>
 </html>
