@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 72px;
+  &-orange {
+    background-color: $orange;
+    color: $white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18.5px 50px;
+    &:hover {
+      background-color: $orangeH;
+    }
+  }
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
