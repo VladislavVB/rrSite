@@ -577,6 +577,12 @@ button.swiper-pagination-bullet {
   padding-right: 15px;
   margin: auto; }
 
+.section-titile {
+  font-size: 46px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 57px; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -985,10 +991,6 @@ a {
       z-index: 10;
       height: 100%; }
     .bussines__descp-title {
-      font-size: 46px;
-      font-weight: 500;
-      text-transform: uppercase;
-      line-height: 57px;
       margin-bottom: 15px; }
     .bussines__descp-descp {
       margin-bottom: 40px; }

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@uvarov.frontend/vanilla-calendar": "^2.2.5",
     "node-sass": "^8.0.0",
     "swiper": "^9.0.0"
   }

@@ -8,6 +8,10 @@
       href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.css"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Site</title>
     <!-- <link
@@ -62,7 +66,9 @@
       <section class="section bussines">
         <div class="container">
           <div class="bussines__descp">
-            <h1 class="bussines__descp-title">Поддержка малого бизнеса</h1>
+            <h1 class="bussines__descp-title section-titile">
+              Поддержка малого бизнеса
+            </h1>
             <p class="bussines__descp-descp">
               Комплексная поддержка предпринимателей Краснодарского края
             </p>
@@ -71,14 +77,18 @@
             </button>
             <div class="bussines__slides-control">
               <div class="bussines__slides-control-pagination">
-                <span class="pag-num pag-num-first swiper-bussines-pagination">01</span>
+                <span class="pag-num pag-num-first swiper-bussines-pagination"
+                  >01</span
+                >
                 <div
                   class="bussines__slides-control-pagination-bar swiper-scrollbar swiper-bussines-scrollbar"
                 ></div>
                 <span class="pag-num pag-num-last">07</span>
               </div>
               <div class="bussines__slides-control-buttons">
-                <div class="prev bussines__slides-control-buttons-item swiper-bussines-button-prev">
+                <div
+                  class="prev bussines__slides-control-buttons-item swiper-bussines-button-prev"
+                >
                   <svg
                     width="40"
                     height="40"
@@ -95,7 +105,9 @@
                     />
                   </svg>
                 </div>
-                <div class="next bussines__slides-control-buttons-item swiper-bussines-button-next">
+                <div
+                  class="next bussines__slides-control-buttons-item swiper-bussines-button-next"
+                >
                   <svg
                     width="40"
                     height="40"
@@ -139,7 +151,7 @@
                   </div>
                   <div class="bussines__slide-card-content">
                     <h5 class="bussines__slide-card-title">
-                     Верстать капец как весело!)
+                      Верстать капец как весело!)
                     </h5>
                     <div class="bussines__slide-link">
                       <span>Подробнее</span
@@ -195,7 +207,8 @@
                   </div>
                   <div class="bussines__slide-card-content">
                     <h5 class="bussines__slide-card-title">
-                      Юзаем битрикс это потому что админская панель имеется, а совю делать долго, дорого
+                      Юзаем битрикс это потому что админская панель имеется, а
+                      совю делать долго, дорого
                     </h5>
                     <div class="bussines__slide-link">
                       <span>Подробнее</span
@@ -209,7 +222,7 @@
                   </div>
                   <div class="bussines__slide-card-content">
                     <h5 class="bussines__slide-card-title">
-                     Ну и седьмой слайд, креатив закончился, на часах уже 23:00
+                      Ну и седьмой слайд, креатив закончился, на часах уже 23:00
                     </h5>
                     <div class="bussines__slide-link">
                       <span>Подробнее</span
@@ -222,8 +235,22 @@
           </div>
         </div>
       </section>
+
+      <section class="section afisha">
+        <div class="container">
+          <h2 class="afisha__header section-titile">Афиша событий</h2>
+          <div class="afisha__content">
+            <div class="afisha__content-calendar">
+              <div id="calendar"></div>
+            </div>
+            <div class="afisha__content-slider"></div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="/node_modules/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js"></script>
     <script src="./scripts/libs/swiper.js"></script>
     <script src="./scripts/sliders.js"></script>
+    <script src="./scripts/afisha.js"></script>
   </body>
 </html>

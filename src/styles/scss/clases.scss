@@ -24,3 +24,12 @@
   padding-right: 15px;
   margin: auto;
 }
+.section{
+  &-titile{
+    font-size: 46px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 57px;
+
+  }
+}
