@@ -1,6 +1,11 @@
 .afisha {
   margin-bottom: 200px;
   &__content {
-
+    .vanilla-calendar-day__btn_holiday {
+      // background-color: $orange;
+      // color: $white;
+      border: 1px solid $orange;
+      color: $black;
+    }
   }
 }
