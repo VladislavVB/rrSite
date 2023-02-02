@@ -6,10 +6,10 @@ const swiperAfisha = new Swiper(".swiper-afisha", {
     prevEl: ".swiper-button-prev",
   },
   spaceBetween: 30,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: true
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true
+  },
 });
 
 const calendar = new VanillaCalendar("#calendar", {

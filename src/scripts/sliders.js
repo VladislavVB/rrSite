@@ -6,10 +6,10 @@ const swiperBussines = new Swiper(".swiper-bussines", {
   slidesPerView: 1.7,
   spaceBetween: 00,
   mousewheel: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: true
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true
+  },
   pagination: {
     el: ".swiper-bussines-pagination",
     type: "fraction",
