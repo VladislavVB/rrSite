@@ -1,5 +1,6 @@
 const modalBg = document.querySelector(".modal__bg");
 const modalWrapperService = document.querySelector(".modal__wrapper-service");
+const modalWrapperNice = document.querySelector('.modal__wrapper-nice')
 
 NiceSelect.bind(document.getElementById("a-select"), {
   placeholder: "select",
@@ -11,6 +12,7 @@ const openModal = () => {
 const closeModal = () => {
   modalBg.classList.remove("active");
   modalWrapperService.classList.remove("active");
+  modalWrapperNice.classList.remove('active')
 };
 
 const form = document.getElementById("serviceForm");
@@ -21,12 +23,13 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
   var valid = pristine.validate();
   if (valid) {
-    console.log(new FormData(form));
+    console.log(11);
     let response = await fetch("/article/formdata/post/user", {
       method: "POST",
       body: new FormData(form),
     });
+    modalWrapperService.classList.remove("active");
+    modalWrapperNice.classList.add('active')
 
   }
-  //  alert('Form is valid: ' + valid);
 });

@@ -286,10 +286,10 @@
         </div>
       </section>
 
-      <div onclick="closeModal()" class="modal__bg active"></div>
+      <div onclick="closeModal()" class="modal__bg "></div>
       <div
         onclick="event.stopPropagation()"
-        class="modal__wrapper modal__wrapper-service active"
+        class="modal__wrapper modal__wrapper-service "
       >
         <div onclick="closeModal()" class="modal__wrapper-close">
           <img src="./images/icons/close.svg" alt="" />
@@ -357,6 +357,7 @@
                 data-pristine-required-message="Нажми"
                 type="checkbox"
                 id="policyCe"
+                name="policyCe"
                 value="Friday"
                 checked
               />
@@ -370,6 +371,15 @@
             </div>
           </form>
         </div>
+      </div>
+      <div
+        onclick="event.stopPropagation()"
+        class="modal__wrapper modal__wrapper-nice"
+      >
+        <div onclick="closeModal()" class="modal__wrapper-close">
+          <img src="./images/icons/close.svg" alt="" />
+        </div>
+        <h1>Спс</h1>
       </div>
     </main>
     <script src="./scripts/libs/select2.js"></script>
