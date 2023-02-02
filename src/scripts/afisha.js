@@ -22,3 +22,11 @@ const calendar = new VanillaCalendar('#calendar', {
  
 });
 calendar.init();
+
+
+const swiperAfisha = new Swiper(".swiper-afisha", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
