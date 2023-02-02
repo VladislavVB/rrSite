@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "@uvarov.frontend/vanilla-calendar": "^2.2.5",
+    "nice-select2": "^2.1.0",
     "node-sass": "^8.0.0",
+    "pristinejs": "^0.1.9",
     "swiper": "^9.0.0"
   }
 }

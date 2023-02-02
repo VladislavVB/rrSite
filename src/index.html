@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="/node_modules/nice-select2/dist/css/nice-select2.css"
+    />
+    <link
       href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880"
       rel="stylesheet"
     />
@@ -72,7 +76,10 @@
             <p class="bussines__descp-descp">
               Комплексная поддержка предпринимателей Краснодарского края
             </p>
-            <button class="bussines__descp-btn btn btn-orange">
+            <button
+              onclick="openModal()"
+              class="bussines__descp-btn btn btn-orange"
+            >
               Оставить заявку
             </button>
             <div class="bussines__slides-control">
@@ -278,10 +285,100 @@
           </div>
         </div>
       </section>
+
+      <div onclick="closeModal()" class="modal__bg active"></div>
+      <div
+        onclick="event.stopPropagation()"
+        class="modal__wrapper modal__wrapper-service active"
+      >
+        <div onclick="closeModal()" class="modal__wrapper-close">
+          <img src="./images/icons/close.svg" alt="" />
+        </div>
+        <div class="modal__service">
+          <h6 class="modal__title">Заявка на оказание услуги</h6>
+          <form
+            id="serviceForm"
+            novalidate
+            method="post"
+            class="modal__content"
+          >
+            <input type="hidden" />
+            <div class="modal__content-item form-group">
+              <input
+                placeholder="ФИО*"
+                required
+                name="fio"
+                data-pristine-required-message="Поле обязательно для заполнения"
+                type="text"
+              />
+            </div>
+            <div class="modal__content-item form-group">
+              <input
+                required
+                data-pristine-required-message="Поле обязательно для заполнения"
+                placeholder="Телефон*"
+                type="text"
+                name="phone"
+                data-tel-input
+              />
+            </div>
+            <div class="modal__content-item form-group">
+              <input
+                required
+                data-pristine-required-message="Поле обязательно
+              для заполнения"
+                placeholder="E-mail*"
+                name="email"
+                type="email"
+              />
+            </div>
+
+            <div class="modal__content-item form-group">
+              <select name="serve" required id="a-select" class="">
+                <option value="Услуга 1">Услуга 1</option>
+                <option value="Услуга 2">Услуга 2</option>
+                <option value="Услуга 3">Услуга 3</option>
+                <option value="Услуга 4">Услуга 4</option>
+              </select>
+            </div>
+
+            <div class="modal__content-item form-group">
+              <textarea
+                name="message"
+                required
+                data-pristine-required-message="Поле обязательно для заполнения"
+                type="text"
+              ></textarea>
+            </div>
+
+            <div class="modal__content-policy inline-label form-group">
+              <input
+                required
+                data-pristine-required-message="Нажми"
+                type="checkbox"
+                id="policyCe"
+                value="Friday"
+                checked
+              />
+              <label for="policyCe">Friday </label>
+            </div>
+
+            <div class="modal__content-footer">
+              <button type="submit" class="btn btn-orange">
+                Оставить заявку
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
+    <script src="./scripts/libs/select2.js"></script>
+    <script src="/node_modules/pristinejs/dist/pristine.min.js"></script>
     <script src="/node_modules/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js"></script>
+    <script src="./scripts/libs/phoneInut.js"></script>
     <script src="./scripts/libs/swiper.js"></script>
     <script src="./scripts/sliders.js"></script>
     <script src="./scripts/afisha.js"></script>
+    <script src="./scripts/modal.js"></script>
   </body>
 </html>

@@ -1,0 +1,49 @@
+.modal {
+  &__bg {
+    transition: $tran;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &__wrapper {
+    transition: $tran;
+    background-color: $white;
+    z-index: 1001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 608px;
+    // height: 674px;
+    opacity: 0;
+    visibility: hidden;
+    padding: 60px 30px;
+    &-close {
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      transition: $tran;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
