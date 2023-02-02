@@ -1,0 +1,72 @@
+.modal__content-policy {
+  // display: flex;
+  margin-bottom: 30px;
+
+  input[type="checkbox"] + label {
+    display: block;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label:active:before {
+    transform: scale(0);
+  }
+
+  input[type="checkbox"]:checked + label:before {
+ 
+    color: $orange;
+  }
+
+  input[type="checkbox"]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+
+  input[type="checkbox"]:checked:disabled + label:before {
+    transform: scale(1);
+    
+  }
+  input {
+    display: block;
+  }
+  label {
+    display: flex !important;
+    margin: 0;
+    padding: 0;
+    span {
+      width: 80%;
+      display: block;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: $black;
+      a {
+        color: $orange;
+        line-height: 15px;
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+  }
+
+  input[type="checkbox"] + label:before {
+    content: "\2714";
+    border: 0.1em solid $input;
+    margin-right: 15px;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    color: transparent;
+    transition: 0.2s;
+    font-size: 20px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+  }
+}

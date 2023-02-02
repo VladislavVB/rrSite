@@ -1,11 +1,148 @@
 .afisha {
   margin-bottom: 200px;
+  margin-top: 130px;
+  &__header {
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
   &__content {
+    display: flex;
+    justify-content: space-between;
     .vanilla-calendar-day__btn_holiday {
       // background-color: $orange;
       // color: $white;
       border: 1px solid $orange;
       color: $black;
+    }
+    &-calendar {
+      width: 30%;
+      .vanilla-calendar {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #c7c7d8;
+        border-radius: 20px;
+        &-month {
+          font-size: 24px;
+          font-weight: 500;
+          &:hover {
+            color: unset;
+          }
+        }
+        &-arrow {
+          &_prev {
+            left: 25px;
+          }
+          &_next {
+            right: 25px;
+          }
+        }
+        &-year {
+          font-size: 24px;
+          font-weight: 500;
+          &:hover {
+            color: unset;
+          }
+        }
+        &-week__day {
+          font-weight: 400;
+          color: $black;
+        }
+        &-day__btn {
+          &:hover {
+            color: $orange;
+            background-color: transparent;
+            border: 1px solid $orange;
+          }
+          &_today {
+            background-color: transparent;
+            color: $orange;
+          }
+          &_weekend {
+            color: $black;
+          }
+          &_selected {
+            background-color: $orange;
+            color: $white;
+          }
+        }
+      }
+    }
+    &-slider {
+      &-wrapper {
+        width: 67%;
+        overflow: hidden;
+        position: relative;
+      }
+    }
+  }
+}
+.swiper-afisha {
+  color: $black;
+  height: 100%;
+  .swiper-wrapper {
+    border-radius: 20px;
+    // overflow: hidden;
+  }
+  &-btn {
+    &::after {
+      content: none;
+    }
+    &:hover {
+      svg {
+        path {
+          stroke: $orange;
+        }
+      }
+    }
+    &.swiper-button-prev {
+      transform: rotate(180deg);
+    }
+  }
+  &-card {
+    padding: 40px 60px;
+    background: #f4e7dc;
+    border-radius: 20px;
+    height: 100%;
+    transition: $tran;
+    &:hover {
+      background-color: #E9E9F0;
+      .swiper-afisha-card-bottom {
+        opacity: 0;
+      }
+    }
+    &-date {
+      color: $orange;
+      font-weight: 600;
+      font-size: 46px;
+      margin-bottom: 65px;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    &-bottom {
+      transition: $tran;
+      margin-top: 55px;
+      display: flex;
+      justify-content: space-between;
+      .bage {
+        background-color: $white;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+        border-radius: 30px;
+        border: none;
+        text-transform: uppercase;
+        color: $black;
+      }
+      .bussines__slide-link {
+        transform: unset;
+        color: $orange;
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }

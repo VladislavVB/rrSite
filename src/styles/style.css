@@ -1099,10 +1099,108 @@ a {
         object-fit: cover; }
 
 .afisha {
-  margin-bottom: 200px; }
-  .afisha__content .vanilla-calendar-day__btn_holiday {
-    border: 1px solid #E04E39;
-    color: #232329; }
+  margin-bottom: 200px;
+  margin-top: 130px; }
+  .afisha__header {
+    margin-bottom: 50px;
+    margin-top: 0; }
+  .afisha__content {
+    display: flex;
+    justify-content: space-between; }
+    .afisha__content .vanilla-calendar-day__btn_holiday {
+      border: 1px solid #E04E39;
+      color: #232329; }
+    .afisha__content-calendar {
+      width: 30%; }
+      .afisha__content-calendar .vanilla-calendar {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #c7c7d8;
+        border-radius: 20px; }
+        .afisha__content-calendar .vanilla-calendar-month {
+          font-size: 24px;
+          font-weight: 500; }
+          .afisha__content-calendar .vanilla-calendar-month:hover {
+            color: unset; }
+        .afisha__content-calendar .vanilla-calendar-arrow_prev {
+          left: 25px; }
+        .afisha__content-calendar .vanilla-calendar-arrow_next {
+          right: 25px; }
+        .afisha__content-calendar .vanilla-calendar-year {
+          font-size: 24px;
+          font-weight: 500; }
+          .afisha__content-calendar .vanilla-calendar-year:hover {
+            color: unset; }
+        .afisha__content-calendar .vanilla-calendar-week__day {
+          font-weight: 400;
+          color: #232329; }
+        .afisha__content-calendar .vanilla-calendar-day__btn:hover {
+          color: #E04E39;
+          background-color: transparent;
+          border: 1px solid #E04E39; }
+        .afisha__content-calendar .vanilla-calendar-day__btn_today {
+          background-color: transparent;
+          color: #E04E39; }
+        .afisha__content-calendar .vanilla-calendar-day__btn_weekend {
+          color: #232329; }
+        .afisha__content-calendar .vanilla-calendar-day__btn_selected {
+          background-color: #E04E39;
+          color: #FFFFFF; }
+    .afisha__content-slider-wrapper {
+      width: 67%;
+      overflow: hidden;
+      position: relative; }
+
+.swiper-afisha {
+  color: #232329;
+  height: 100%; }
+  .swiper-afisha .swiper-wrapper {
+    border-radius: 20px; }
+  .swiper-afisha-btn::after {
+    content: none; }
+  .swiper-afisha-btn:hover svg path {
+    stroke: #E04E39; }
+  .swiper-afisha-btn.swiper-button-prev {
+    transform: rotate(180deg); }
+  .swiper-afisha-card {
+    padding: 40px 60px;
+    background: #f4e7dc;
+    border-radius: 20px;
+    height: 100%;
+    transition: 0.3s; }
+    .swiper-afisha-card:hover {
+      background-color: #E9E9F0; }
+      .swiper-afisha-card:hover .swiper-afisha-card-bottom {
+        opacity: 0; }
+    .swiper-afisha-card-date {
+      color: #E04E39;
+      font-weight: 600;
+      font-size: 46px;
+      margin-bottom: 65px; }
+    .swiper-afisha-card p {
+      font-size: 24px;
+      font-weight: 600; }
+    .swiper-afisha-card-bottom {
+      transition: 0.3s;
+      margin-top: 55px;
+      display: flex;
+      justify-content: space-between; }
+      .swiper-afisha-card-bottom .bage {
+        background-color: #FFFFFF;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+        border-radius: 30px;
+        border: none;
+        text-transform: uppercase;
+        color: #232329; }
+      .swiper-afisha-card-bottom .bussines__slide-link {
+        transform: unset;
+        color: #E04E39;
+        display: flex;
+        align-items: center; }
 
 .modal__bg {
   transition: 0.3s;
@@ -1145,3 +1243,124 @@ a {
   .modal__wrapper.active {
     visibility: visible;
     opacity: 1; }
+
+.modal__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase; }
+
+.modal__content {
+  margin-top: 20px; }
+  .modal__content-select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+    border-radius: 0px;
+    padding: 10px 15px;
+    height: 50px; }
+    .modal__content-select .current {
+      font-size: 16px; }
+  .modal__content .nice-select-dropdown {
+    width: 100%; }
+  .modal__content .nice-select .option {
+    font-size: 16px; }
+    .modal__content .nice-select .option.selected {
+      font-weight: unset; }
+  .modal__content-item {
+    width: 100%;
+    margin-bottom: 10px; }
+    .modal__content-item input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #C4C4C4;
+      padding: 10px 15px;
+      font-size: 16px; }
+      .modal__content-item input::placeholder {
+        color: rgba(35, 35, 41, 0.5);
+        font-weight: 400;
+        font-size: 16px; }
+      .modal__content-item input:focus {
+        outline: none; }
+    .modal__content-item textarea {
+      margin-top: 30px;
+      width: 100%;
+      border: 1px solid #C4C4C4;
+      height: 100px;
+      font-size: 16px;
+      max-height: 100px;
+      min-height: 100px;
+      width: 100%;
+      padding: 15px;
+      resize: none; }
+      .modal__content-item textarea:focus {
+        outline: none; }
+      .modal__content-item textarea::placeholder {
+        font-size: 16px; }
+    .modal__content-item.has-danger input {
+      border-color: #E04E39; }
+      .modal__content-item.has-danger input::placeholder {
+        color: #E04E39; }
+    .modal__content-item.has-danger .text-help,
+    .modal__content-item.has-danger .pristine-error {
+      font-size: 12px;
+      padding-left: 15px;
+      color: #E04E39;
+      margin-top: 5px; }
+
+.pristine-error.text-help {
+  font-size: 12px;
+  padding-left: 15px;
+  color: #E04E39;
+  margin-top: 5px; }
+
+.modal__content-policy {
+  margin-bottom: 30px; }
+  .modal__content-policy input[type="checkbox"] + label {
+    display: block;
+    cursor: pointer; }
+  .modal__content-policy input[type="checkbox"] {
+    display: none; }
+  .modal__content-policy input[type="checkbox"] + label:active:before {
+    transform: scale(0); }
+  .modal__content-policy input[type="checkbox"]:checked + label:before {
+    color: #E04E39; }
+  .modal__content-policy input[type="checkbox"]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa; }
+  .modal__content-policy input[type="checkbox"]:checked:disabled + label:before {
+    transform: scale(1); }
+  .modal__content-policy input {
+    display: block; }
+  .modal__content-policy label {
+    display: flex !important;
+    margin: 0;
+    padding: 0; }
+    .modal__content-policy label span {
+      width: 80%;
+      display: block;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #232329; }
+      .modal__content-policy label span a {
+        color: #E04E39;
+        line-height: 15px;
+        font-weight: 400;
+        font-size: 12px; }
+  .modal__content-policy input[type="checkbox"] + label:before {
+    content: "\2714";
+    border: 0.1em solid #C4C4C4;
+    margin-right: 15px;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    color: transparent;
+    transition: 0.2s;
+    font-size: 20px;
+    padding: 3px;
+    display: flex;
+    align-items: center; }

@@ -46,4 +46,92 @@
       opacity: 1;
     }
   }
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  &__content {
+    margin-top: 20px;
+    &-select {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $input;
+      border-radius: 0px;
+      padding: 10px 15px;
+      height: 50px;
+      .current {
+        font-size: 16px;
+      }
+    }
+    .nice-select-dropdown {
+      width: 100%;
+    }
+    .nice-select .option {
+      font-size: 16px;
+      &.selected {
+        font-weight: unset;
+      }
+    }
+    &-item {
+      width: 100%;
+      margin-bottom: 10px;
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $input;
+        padding: 10px 15px;
+        font-size: 16px;
+        &::placeholder {
+          color: rgba(35, 35, 41, 0.5);
+          font-weight: 400;
+          font-size: 16px;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        margin-top: 30px;
+        width: 100%;
+        border: 1px solid $input;
+        height: 100px;
+        font-size: 16px;
+        max-height: 100px;
+        min-height: 100px;
+        width: 100%;
+        padding: 15px;
+        resize: none;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+      &.has-danger {
+        input {
+          border-color: $orange;
+          &::placeholder {
+            color: $orange;
+          }
+        }
+        .text-help,
+        .pristine-error {
+          font-size: 12px;
+          padding-left: 15px;
+          color: $orange;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  
+}
+.pristine-error.text-help {
+  font-size: 12px;
+  padding-left: 15px;
+  color: $orange;
+  margin-top: 5px;
 }
