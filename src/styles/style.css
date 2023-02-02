@@ -1252,6 +1252,8 @@ a {
 
 .modal__content {
   margin-top: 20px; }
+  .modal__content .btn {
+    padding: 12px 70px; }
   .modal__content-select {
     width: 100%;
     border: none;

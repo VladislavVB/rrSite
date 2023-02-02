@@ -54,6 +54,9 @@
   }
   &__content {
     margin-top: 20px;
+    .btn {
+      padding: 12px 70px;
+    }
     &-select {
       width: 100%;
       border: none;
