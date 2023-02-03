@@ -7,6 +7,10 @@ const swiperBussines = new Swiper(".swiper-bussines", {
   spaceBetween: 00,
   mousewheel: true,
   breakpoints: {
+    140: {
+      slidesPerView: 1,
+      spaceBetween: 00,
+    },
     640: {
       slidesPerView: 1,
       spaceBetween: 00,

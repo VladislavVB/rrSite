@@ -60,3 +60,8 @@
     font-size: 14px;
   }
 }
+@include m576 {
+  .section-titile {
+    font-size: 20px;
+  }
+}

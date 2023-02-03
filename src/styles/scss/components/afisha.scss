@@ -214,7 +214,6 @@
     &__content {
       &-calendar {
         width: 47.5%;
-
       }
       &-slider {
         &-wrapper {
@@ -222,11 +221,10 @@
         }
       }
     }
-
   }
   .swiper {
     &-afisha {
-      &-card{
+      &-card {
         padding: 20px;
         &-date {
           font-size: 24px;
@@ -254,5 +252,26 @@
     &.swiper-button-prev {
       left: -3px;
     }
+  }
+}
+
+@include m576 {
+  .afisha {
+    &__content {
+      flex-direction: column;
+      &-calendar {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      &-slider-wrapper {
+        width: 100%;
+      }
+    }
+  }
+  .swiper-afisha-card-date {
+    margin-bottom: 20px;
+  }
+  .swiper-afisha-card-bottom {
+    margin-top: 20px;
   }
 }

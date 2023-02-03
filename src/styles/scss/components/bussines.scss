@@ -265,3 +265,50 @@
     margin-bottom: 19px;
   }
 }
+
+@include m576 {
+  .bussines__slides-wrapper {
+    width: 100%;
+  }
+  .bussines__slide {
+    &-card {
+      height: 300px !important;
+      &-title {
+        max-width: 80%;
+      }
+    }
+    &-link {
+      span {
+        font-size: 14px;
+        font-weight: 100;
+      }
+    }
+  }
+  .bussines {
+    height: unset;
+    &__descp {
+      width: 100%;
+      padding-right: 0;
+      margin-right: 0;
+      &-title {
+        display: none;
+      }
+      &-descp {
+        display: none;
+      }
+      &-btn {
+        margin-top: 80px;
+        width: 100%;
+      }
+    }
+    .container {
+      flex-direction: column-reverse;
+    }
+    &__slides-control {
+      transform: translate(0, -72px);
+      &-pagination {
+        overflow: hidden;
+      }
+    }
+  }
+}

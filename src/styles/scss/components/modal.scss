@@ -130,11 +130,29 @@
       }
     }
   }
-  
 }
 .pristine-error.text-help {
   font-size: 12px;
   padding-left: 15px;
   color: $orange;
   margin-top: 5px;
+}
+@include m576 {
+  .modal__wrapper {
+    width: 94vw;
+    padding: 40px 20px;
+  }
+  .modal {
+    &__title {
+      font-size: 16px;
+      max-width: 70%;
+    }
+    &__content .btn {
+      width: 100%;
+    }
+    &__wrapper-close {
+      top: 16px;
+      right: 16px;
+    }
+  }
 }

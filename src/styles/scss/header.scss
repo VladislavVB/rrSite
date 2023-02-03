@@ -3,6 +3,8 @@
   top: 0;
   width: 100vw;
   padding: 20px 0;
+  z-index: 800;
+  background-color: $white;
   .container {
     position: relative;
   }
@@ -57,6 +59,9 @@
         &:hover {
           color: $orange;
         }
+        &-mob {
+          display: none;
+        }
       }
       .sochials {
         display: flex;
@@ -102,8 +107,18 @@
 @include m768 {
   .header {
     &__content {
-      &-utils__item span {
-        display: none;
+      flex-direction: row-reverse;
+      &-utils {
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__item span {
+          display: none;
+        }
+      }
+      &-logo {
+        left: 0;
+        transform: translate(15px, -50%);
       }
       &-sochial {
         .sochials {
@@ -112,5 +127,19 @@
       }
     }
   }
-  
+}
+@include m576 {
+  .header__content {
+    justify-content: end;
+    &-utils__item {
+      margin-left: 10px;
+    }
+    &-sochial .phone {
+      display: none;
+      &-mob {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 }
