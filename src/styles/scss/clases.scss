@@ -24,12 +24,39 @@
   padding-right: 15px;
   margin: auto;
 }
-.section{
-  &-titile{
+.section {
+  &-titile {
     font-size: 46px;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 57px;
+  }
+}
 
+@include m1024 {
+  .container {
+    max-width: 840px;
+  }
+  .section {
+    &-titile {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}
+
+@include m768 {
+  .container {
+    max-width: 570px;
+  }
+  .section {
+    &-titile {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  .btn-orange {
+    padding: 11px 31px;
+    font-size: 14px;
   }
 }

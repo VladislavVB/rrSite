@@ -35,7 +35,7 @@
         }
         span {
           transition: $tran;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 500;
         }
       }
@@ -46,13 +46,14 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: $orange;
-      font-weight: 600;
+      font-weight: 500;
     }
     &-sochial {
       display: flex;
       align-items: center;
       .phone {
         transition: $tran;
+        font-size: 16px;
         &:hover {
           color: $orange;
         }
@@ -80,4 +81,36 @@
 }
 .air {
   height: 66px;
+}
+
+@include m1024 {
+  .header__content {
+    &-utils {
+      &__item {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+    &-sochial {
+      &.phone {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@include m768 {
+  .header {
+    &__content {
+      &-utils__item span {
+        display: none;
+      }
+      &-sochial {
+        .sochials {
+          display: none;
+        }
+      }
+    }
+  }
+  
 }

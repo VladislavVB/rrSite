@@ -583,6 +583,23 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
   line-height: 57px; }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 840px; }
+  .section-titile {
+    font-size: 32px;
+    line-height: 40px; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 570px; }
+  .section-titile {
+    font-size: 24px;
+    line-height: 28px; }
+  .btn-orange {
+    padding: 11px 31px;
+    font-size: 14px; } }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -930,7 +947,7 @@ a {
           margin-right: 15px; }
         .header__content-utils__item span {
           transition: 0.3s;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 500; }
     .header__content-logo {
       position: absolute;
@@ -938,12 +955,13 @@ a {
       left: 50%;
       transform: translate(-50%, -50%);
       color: #E04E39;
-      font-weight: 600; }
+      font-weight: 500; }
     .header__content-sochial {
       display: flex;
       align-items: center; }
       .header__content-sochial .phone {
-        transition: 0.3s; }
+        transition: 0.3s;
+        font-size: 16px; }
         .header__content-sochial .phone:hover {
           color: #E04E39; }
       .header__content-sochial .sochials {
@@ -964,6 +982,18 @@ a {
 
 .air {
   height: 66px; }
+
+@media screen and (max-width: 1024px) {
+  .header__content-utils__item span {
+    font-size: 14px; }
+  .header__content-sochial.phone {
+    font-size: 14px; } }
+
+@media screen and (max-width: 768px) {
+  .header__content-utils__item span {
+    display: none; }
+  .header__content-sochial .sochials {
+    display: none; } }
 
 .bussines {
   height: 465px;
@@ -1019,7 +1049,7 @@ a {
           .bussines__slides-control-pagination .pag-num-first .swiper-pagination-total {
             display: none; }
           .bussines__slides-control-pagination .pag-num-first .swiper-pagination-current::before {
-            content: '0'; }
+            content: "0"; }
         .bussines__slides-control-pagination .swiper-bussines-scrollbar {
           height: 1px !important;
           width: 100px !important;
@@ -1098,6 +1128,60 @@ a {
         height: 100%;
         object-fit: cover; }
 
+@media screen and (max-width: 1024px) {
+  .bussines .container {
+    justify-content: space-between; }
+  .bussines__slides-wrapper {
+    width: 55%; }
+  .bussines__descp {
+    width: 44%;
+    margin-right: 10px;
+    padding-right: 20px; }
+    .bussines__descp-title {
+      margin-bottom: 10px; }
+    .bussines__descp-descp {
+      margin-top: 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-bottom: 30px; }
+  .bussines__slides-control-pagination .pag-num {
+    font-size: 16px; }
+    .bussines__slides-control-pagination .pag-num-first {
+      font-size: 16px; }
+      .bussines__slides-control-pagination .pag-num-first .swiper-pagination-current {
+        font-size: 16px; } }
+
+@media screen and (max-width: 768px) {
+  .bussines {
+    height: 320px; }
+    .bussines__descp {
+      width: 46%; }
+      .bussines__descp-descp {
+        font-size: 14px;
+        line-height: 19px; }
+    .bussines__slides-wrapper {
+      width: 52%; }
+    .bussines__slides-control-pagination {
+      width: 135px; }
+    .bussines__slides-control-buttons {
+      width: 77px; }
+      .bussines__slides-control-buttons-item {
+        width: 24px;
+        height: 24px; }
+    .bussines__slide-card {
+      height: 320px !important;
+      padding: 20px; }
+      .bussines__slide-card-title {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 19px; }
+    .bussines__slide-link span {
+      font-size: 14px;
+      font-weight: 400; }
+  .bussines__slide-card.swiper-slide-active .bussines__slide-card-title {
+    margin-bottom: 19px; } }
+
 .afisha {
   margin-bottom: 200px;
   margin-top: 130px; }
@@ -1169,7 +1253,7 @@ a {
     height: 100%;
     transition: 0.3s; }
     .swiper-afisha-card:hover {
-      background-color: #E9E9F0; }
+      background-color: #e9e9f0; }
       .swiper-afisha-card:hover .swiper-afisha-card-bottom {
         opacity: 0; }
     .swiper-afisha-card-date {
@@ -1201,6 +1285,66 @@ a {
         color: #E04E39;
         display: flex;
         align-items: center; }
+
+@media screen and (max-width: 1024px) {
+  .afisha {
+    margin-top: 80px; }
+    .afisha__content-calendar {
+      width: 33%; }
+    .afisha__content-slider-wrapper {
+      width: 64%; }
+  .swiper-afisha-card {
+    padding: 40px 50px; }
+    .swiper-afisha-card-date {
+      font-size: 32px;
+      margin-bottom: 50px;
+      font-weight: 500; }
+    .swiper-afisha-card p {
+      font-size: 20px;
+      line-height: 26px; }
+    .swiper-afisha-card-bottom {
+      margin: 0;
+      margin-top: 34px; }
+      .swiper-afisha-card-bottom .bage {
+        font-size: 16px;
+        font-weight: 400; }
+      .swiper-afisha-card-bottom .bussines__slide-link span {
+        font-size: 16px; }
+      .swiper-afisha-card-bottom .bussines__slide-link img {
+        width: 12px;
+        width: 12px; }
+  .afisha__content-calendar .vanilla-calendar-month {
+    font-size: 20px; }
+  .afisha__content-calendar .vanilla-calendar-year {
+    font-size: 20px; }
+  .afisha__content-calendar .vanilla-calendar-day__btn {
+    font-size: 16px; } }
+
+@media screen and (max-width: 768px) {
+  .afisha {
+    margin-top: 60px; }
+    .afisha__header {
+      margin-bottom: 30px; }
+    .afisha__content-calendar {
+      width: 47.5%; }
+    .afisha__content-slider-wrapper {
+      width: 47.5%; }
+  .swiper-afisha-card {
+    padding: 20px; }
+    .swiper-afisha-card-date {
+      font-size: 24px;
+      line-height: 28px; }
+    .swiper-afisha-card p {
+      font-size: 14px;
+      line-height: 19px; }
+    .swiper-afisha-card-bottom .bussines__slide-link {
+      display: none; }
+    .swiper-afisha-card-bottom .bage {
+      font-size: 14px; }
+  .swiper-afisha-btn.swiper-button-next {
+    right: -3px; }
+  .swiper-afisha-btn.swiper-button-prev {
+    left: -3px; } }
 
 .modal__bg {
   transition: 0.3s;

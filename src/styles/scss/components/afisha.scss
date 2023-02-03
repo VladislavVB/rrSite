@@ -105,7 +105,7 @@
     height: 100%;
     transition: $tran;
     &:hover {
-      background-color: #E9E9F0;
+      background-color: #e9e9f0;
       .swiper-afisha-card-bottom {
         opacity: 0;
       }
@@ -143,6 +143,116 @@
         display: flex;
         align-items: center;
       }
+    }
+  }
+}
+@include m1024 {
+  .afisha {
+    margin-top: 80px;
+    &__content {
+      &-calendar {
+        width: 33%;
+      }
+      &-slider {
+        &-wrapper {
+          width: 64%;
+        }
+      }
+    }
+  }
+  .swiper-afisha {
+    &-card {
+      padding: 40px 50px;
+      &-date {
+        font-size: 32px;
+        margin-bottom: 50px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      &-bottom {
+        margin: 0;
+        margin-top: 34px;
+        .bage {
+          font-size: 16px;
+          font-weight: 400;
+        }
+        .bussines__slide-link {
+          span {
+            font-size: 16px;
+          }
+          img {
+            width: 12px;
+            width: 12px;
+          }
+        }
+      }
+    }
+  }
+  .afisha__content-calendar {
+    .vanilla-calendar {
+      &-month {
+        font-size: 20px;
+      }
+      &-year {
+        font-size: 20px;
+      }
+      &-day__btn {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@include m768 {
+  .afisha {
+    margin-top: 60px;
+    &__header {
+      margin-bottom: 30px;
+    }
+    &__content {
+      &-calendar {
+        width: 47.5%;
+
+      }
+      &-slider {
+        &-wrapper {
+          width: 47.5%;
+        }
+      }
+    }
+
+  }
+  .swiper {
+    &-afisha {
+      &-card{
+        padding: 20px;
+        &-date {
+          font-size: 24px;
+          line-height: 28px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 19px;
+        }
+        &-bottom {
+          .bussines__slide-link {
+            display: none;
+          }
+          .bage {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .swiper-afisha-btn {
+    &.swiper-button-next {
+      right: -3px;
+    }
+    &.swiper-button-prev {
+      left: -3px;
     }
   }
 }

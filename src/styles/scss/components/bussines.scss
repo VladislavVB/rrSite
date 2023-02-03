@@ -26,7 +26,6 @@
       height: 100%;
     }
     &-title {
-      
       margin-bottom: 15px;
     }
     &-descp {
@@ -62,9 +61,8 @@
               display: none;
             }
             .swiper-pagination-current {
-             
               &::before {
-                content: '0';
+                content: "0";
               }
             }
           }
@@ -96,7 +94,7 @@
           align-items: center;
           justify-content: center;
           cursor: pointer;
-          &:hover{
+          &:hover {
             path {
               stroke: $orange;
             }
@@ -178,5 +176,92 @@
         }
       }
     }
+  }
+}
+@include m1024 {
+  .bussines {
+    .container {
+      justify-content: space-between;
+    }
+    &__slides {
+      &-wrapper {
+        width: 55%;
+      }
+    }
+    &__descp {
+      width: 44%;
+      margin-right: 10px;
+      padding-right: 20px;
+      &-title {
+        margin-bottom: 10px;
+      }
+      &-descp {
+        margin-top: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .bussines__slides-control-pagination {
+    .pag-num {
+      font-size: 16px;
+      &-first {
+        font-size: 16px;
+        .swiper-pagination-current {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@include m768 {
+  .bussines {
+    height: 320px;
+    &__descp {
+      width: 46%;
+      &-descp {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+    &__slides {
+      &-wrapper {
+        width: 52%;
+      }
+      &-control {
+        &-pagination {
+          width: 135px;
+        }
+        &-buttons {
+          width: 77px;
+          &-item {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+    &__slide {
+      &-card {
+        height: 320px !important;
+        padding: 20px;
+        &-title {
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 19px;
+        }
+      }
+      &-link {
+        span {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .bussines__slide-card.swiper-slide-active .bussines__slide-card-title {
+    margin-bottom: 19px;
   }
 }

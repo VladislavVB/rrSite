@@ -6,6 +6,20 @@ const swiperBussines = new Swiper(".swiper-bussines", {
   slidesPerView: 1.7,
   spaceBetween: 00,
   mousewheel: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 00,
+    },
+    768: {
+      slidesPerView: 1.4,
+      spaceBetween: 00,
+    },
+    1024: {
+      slidesPerView: 1.7,
+      spaceBetween: 00,
+    },
+  },
   autoplay: {
     delay: 3000,
     disableOnInteraction: true
